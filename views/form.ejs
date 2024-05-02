@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="department_id">Department ID:</label>
+        <input type="text" id="department_id" name="department_id" placeholder="Your Department ID" >
+        
+        
+    
+        
+        <label for="transportation_mode">Transportation Mode:</label>
+        <select id="transportation_mode" name="transportation_mode">
+            <option value="Air">Air</option>
+            <option value="Sea">Sea</option>
+            <option value="Rail">Rail</option>
+            <option value="Land">Land</option>
+            <option value="Courier">Courier</option>
+        </select>
+        
+        <label for="voyages">Voyages:</label>
+        <input type="text" id="voyages" name="voyages">
+        
+        <label for="port_load">Port Load:</label>
+        <input type="text" id="port_load" name="port_load">
+        
+        <label for="job_types">Job Types:</label>
+        <input type="text" id="job_types" name="job_types">
+        
+        <label for="place_of_receipt">Place of Receipt:</label>
+        <select id="place_of_receipt" name="place_of_receipt">
+            <option value="Country1">Country1</option>
+            <option value="Country2">Country2</option>
+            <option value="Country3">Country3</option>
+            <option value="Country4">Country4</option>
+        </select>
+        
+        <label for="port_disc_id">Port Disc ID:</label>
+        <input type="number" id="port_disc_id" name="port_disc_id">
+        
+        <label for="place_of_delivery">Place of Delivery:</label>
+        <select id="place_of_delivery" name="place_of_delivery">
+            <option value="Area1">Area1</option>
+            <option value="Area2">Area2</option>
+            <option value="Area3">Area3</option>
+            <option value="Area4">Area4</option>
+        </select>
+        
+        
+        <label for="estimate_tod">Estimate TOD:</label>
+        <input type="text" id="estimate_tod" name="estimate_tod">
+        
+        <label for="carrier_agent_id">Carrier Agent ID:</label>
+        <input type="text" id="carrier_agent_id" name="carrier_agent_id">
+        
+        <label for="shipper_ref_num">Shipper Ref Num:</label>
+        <input type="text" id="shipper_ref_num" name="shipper_ref_num">
+        
+        <label for="shipment_country_of_origin">Shipment Country of Origin:</label>
+        <select id="shipment_country_of_origin" name="shipment_country_of_origin">
+            <option value="CountryA">CountryA</option>
+            <option value="CountryB">CountryB</option>
+            <option value="CountryC">CountryC</option>
+            <option value="CountryD">CountryD</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
